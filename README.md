@@ -60,15 +60,8 @@ Tools and libraries
 - Probabilistic CLV: PyMC-Marketing (BG/NBD, Gamma-Gamma)
 - Bayesian inference and diagnostics: PyMC, ArviZ, ArviZ Plots, xarray
 - Environment: Jupyter Notebook
-How to run
-1. Clone or download the repository and open EcommerceProject.ipynb in Jupyter.
-2. Create a Python environment and install the packages used by the notebook:
-   pip install jupyter pandas numpy matplotlib seaborn scikit-learn pymc pymc-marketing arviz arviz-plots xarray
-3. Obtain the underlying Ecommerce.csv dataset and place it in an appropriate local directory.
-4. Update the data-loading path in the notebook. The original notebook uses a machine-specific absolute path. For a CSV placed beside the notebook, use:
-   data = pd.read_csv("Ecommerce.csv", sep=";")
-5. Run the notebook cells in order. Bayesian model fitting may take time; package API differences may require adjustment depending on installed versions.
-Reproducibility note: The notebook is exploratory and includes intermediate variables and model-fitting steps. The README describes the analysis present in the notebook; it is not a guarantee that every cell runs unchanged in a fresh environment. Pin package versions and perform a clean-kernel run before publishing a reproducible release.
+
+
 
 Limitations
 - No marketing spend data: Marketing mix modelling, channel-level return on advertising spend, and defensible budget optimization were not possible.
